@@ -6,3 +6,8 @@ Feature: Páros szám ellenőrzése
   # 3. Nulla ellenőrzése (0)
   # 4. Negatív páros szám ellenőrzése (-4)
   # 5. Negatív páratlan szám ellenőrzése (-5)
+
+  Scenario: Páros szám ellenőrzése
+    Given the number is 4
+    When I check the number
+    Then I should told "even"
